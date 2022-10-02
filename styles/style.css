@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+h1 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: serif;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../assets/bg.jpg');
+
+  background-size: contain;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(37, 7, 7);
+}
+
+.mainCard {
+  width: 500px;
+  border-radius: 2rem;
+  background-color: rgb(240, 238, 241);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  box-shadow: 1rem 1rem 5rem rgb(6, 6, 11);
+  opacity: .7;
+  border: 1px solid black;
+
+}
+
+.ThankYouMessage {
+  width: 300px;
+  margin: auto;
+  background-color: rgb(239, 238, 241);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  opacity: 0.7;
+  box-shadow: 2rem 3rem 10rem rgb(6, 6, 11);
+  border: 1px solid black;
+}
+
+.none {
+  display: none;
+}
+
+.heading {
+  text-align: center;
+  width: 100%;
+}
+
+.ScoreContainer {
+  display: flex;
+  margin: 2rem;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+.yourScoreContainer,
+.computerScoreContainer {
+  line-height: 2rem;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: 2s;
+  color: rgb(240, 238, 241);
+  background-color: rgb(37, 7, 7);
+}
+
+.whoGettingScoreContainer {
+  margin: 1rem;
+  font-weight: 800;
+
+}
+
+.gameOverContainer {
+  background-color: rgb(160, 175, 170);
+  border-radius: .2rem;
+  border: 50%;
+  border: 1px solid black;
+  text-align: center;
+  margin: -1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+
+.buttonContainer button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+.buttonContainer button:hover {
+  transition: 2s;
+  background-color: rgb(37, 7, 7);
+  color: rgb(240, 238, 241);
+}
+
+@media screen and (max-width: 426px) {
+  .mainCard {
+    width: 270px;
+    margin: 1rem 0rem;
+  }
+
+  .option {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin: 0.5rem;
+  }
+
+  .ScoreContainer {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rock Paper Scissors Lizard Spock Game using HTML, CSS, JavaScript
+    </title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mainCard" id="mainCard">
+      <div class="heading">
+        <h1>Rock Paper Scissors Lizard Spock Game</h1>
+      </div>
+      <div class="ScoreContainer" id="ScoreContainer">
+        <div class="yourScoreContainer">
+          <h2>Your Score</h2>
+          <span id="yourScore">0</span>
+        </div>
+        <div class="computerScoreContainer">
+          <h2>Computer Score</h2>
+          <span id="computerScore">0</span>
+        </div>
+      </div>
+      <div class="option" id="option">
+        <button class="btn" onclick="choice('rock')">
+          <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        <button class="btn" onclick="choice('paper')">
+          <i class="fa-solid fa-hand"></i>
+        </button>
+        <button class="btn" onclick="choice('scissor')">
+          <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+        <button class="btn" onclick="choice('spock')">
+          <i class="fa-solid fa-hand-spock"></i>
+        </button>
+        <button class="btn" onclick="choice('lizard')">
+          <i class="fa-solid fa-hand-lizard"></i>
+        </button>
+      </div>
+      <div class="whoGettingScoreContainer" id="whoGettingScoreContainer">
+        <span class="whoGettingScore" id="whoGettingScore"></span>
+      </div>
+      <div class="gameOverContainer none" id="gameOverContainer">
+        <p><span id="wonPerson"></span> Won !!!</p>
+        <p>Continue ?</p>
+        <div class="buttonContainer">
+          <button onclick="location.reload()">Sure</button>
+          <button onclick="NoMoreGameFunction()">Not now</button>
+        </div>
+      </div>
+    </div>
+    <div class="ThankYouMessage none" id="ThankYouMessage">
+      <h2>Thank You for playing !!!</h2>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
