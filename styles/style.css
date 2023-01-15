@@ -16,11 +16,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url('../assets/bg.jpg');
-
+  background-color: steelblue;
   background-size: contain;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(37, 7, 7);
+}
+
+
+a {
+  text-decoration: none;
 }
 
 .mainCard {
@@ -60,6 +64,11 @@ body {
 .heading {
   text-align: center;
   width: 100%;
+}
+
+.heading>p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
 }
 
 .ScoreContainer {
