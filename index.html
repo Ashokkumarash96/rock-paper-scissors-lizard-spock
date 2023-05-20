@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Define the metadata of the document -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title of the document -->
     <title>
       Rock Paper Scissors Lizard Spock Game using HTML, CSS, JavaScript
     </title>
 
+    <!-- Link the external CSS file for styling -->
     <link rel="stylesheet" href="./styles/style.css" />
 
+    <!-- Link the external font awesome library for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -19,23 +23,31 @@
     />
   </head>
   <body>
+    <!-- Create a main card element to contain the game elements -->
     <div class="mainCard" id="mainCard">
+      <!-- Create a heading element to display the title and the rules link -->
       <div class="heading">
         <h1>Rock Paper Scissors Lizard Spock Game</h1>
         <p>For rules, <a href="./assets/bg.jpg"> Click here</a></p>
       </div>
+      <!-- Create a score container element to display the scores of both players -->
       <div class="ScoreContainer" id="ScoreContainer">
+        <!-- Create a sub-container element to display the user's score -->
         <div class="yourScoreContainer">
           <h2>Your Score</h2>
           <span id="yourScore">0</span>
         </div>
+        <!-- Create a sub-container element to display the computer's score -->
         <div class="computerScoreContainer">
           <h2>Computer Score</h2>
           <span id="computerScore">0</span>
         </div>
       </div>
+      <!-- Create an option element to display the buttons for each option -->
       <div class="option" id="option">
+        <!-- Create a button element for each option and call the choice function with the corresponding argument on click -->
         <button class="btn" onclick="choice('rock')">
+          <!-- Use font awesome icons to represent each option -->
           <i class="fa-solid fa-hand-back-fist"></i>
         </button>
         <button class="btn" onclick="choice('paper')">
@@ -51,21 +63,32 @@
           <i class="fa-solid fa-hand-lizard"></i>
         </button>
       </div>
+      <!-- Create a whoGettingScoreContainer element to display who gets a point in each round -->
       <div class="whoGettingScoreContainer" id="whoGettingScoreContainer">
+        <!-- Use a span element to display the text -->
         <span class="whoGettingScore" id="whoGettingScore"></span>
       </div>
+      <!-- Create a gameOverContainer element to display the final result and the option to continue or quit -->
       <div class="gameOverContainer none" id="gameOverContainer">
+        <!-- Use a p element to display who won the game -->
         <p><span id="wonPerson"></span> Won !!!</p>
+        <!-- Use another p element to ask if the user wants to continue -->
         <p>Continue ?</p>
+        <!-- Use a div element to contain the buttons for continuing or quitting -->
         <div class="buttonContainer">
+          <!-- Use a button element to reload the page on click if the user wants to continue -->
           <button onclick="location.reload()">Sure</button>
+          <!-- Use another button element to call the NoMoreGameFunction on click if the user wants to quit -->
           <button onclick="NoMoreGameFunction()">Not now</button>
         </div>
       </div>
     </div>
+    <!-- Create a ThankYouMessage element to display a thank you message when the user quits -->
     <div class="ThankYouMessage none" id="ThankYouMessage">
+      <!-- Use an h2 element to display the message -->
       <h2>Thank You for playing !!!</h2>
     </div>
+    <!-- Link the external JavaScript file for functionality -->
     <script src="./scripts/script.js"></script>
   </body>
 </html>
