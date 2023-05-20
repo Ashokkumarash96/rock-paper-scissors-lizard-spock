@@ -81,7 +81,7 @@ function choice(userOption) {
       ComputerGetPoint();
     }
   }
-  // Check if either player has reached 10 points and end the game
+  // Check if either player has reached 10 points and stop the game
   if (youScore >= 10) {
     document.getElementById("wonPerson").textContent = "You";
     document.getElementById("option").classList.replace("option", "none");
